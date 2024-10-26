@@ -1,70 +1,163 @@
-# Getting Started with Create React App
+# Weekly Task Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive task management application built with React and Tailwind CSS that helps users organize and track their weekly tasks efficiently.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+### Task Management
+- **Create Tasks** with:
+  - Title (required)
+  - Description
+  - Date & Time scheduling
+  - Priority levels (Low, Medium, High)
+- **Edit Tasks**: Modify any task attributes
+- **Delete Tasks**: Remove unwanted tasks
+- **Search Functionality**: Find tasks using keywords
+- **Status Tracking**: Mark tasks as Complete or In Progress
 
-### `npm start`
+### Weekly Organization
+- Tasks grouped by week (Monday to Sunday)
+- Weekly summary cards showing:
+  - Open tasks count
+  - Completed tasks count
+- Expandable weekly views
+- Visual progress tracking
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### User Interface
+- Fully responsive design (Mobile-first approach)
+- Clean and intuitive interface
+- Smooth animations and transitions
+- Interactive task cards
+- Search functionality with real-time results
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Getting Started
 
-### `npm test`
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository
+```bash
+git clone https://github.com/MSekhar2002/digiaccel_frontend.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory
+```bash
+cd digiaccel_frontend
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-### `npm run eject`
+5. Open http://localhost:3000 in your browser or you can use it directly by live link
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Built With
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React** - Frontend framework
+- **Tailwind CSS** - Styling and responsive design
+- **Framer Motion** - Animations
+- **Date-fns** - Date manipulation
+- **React Icons** - Icon components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📱 User Flow
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Home Screen**
+   - View weekly task summary cards
+   - Expand weeks to see detailed tasks
+   - Quick status overview
 
-## Learn More
+2. **Task Creation**
+   - Click "Add Task" button
+   - Fill in task details
+   - Set date, time, and priority
+   - Save to add to weekly view
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Task Management**
+   - Edit: Click on task to modify
+   - Delete: Swipe left and confirm
+   - Complete: Toggle status checkbox
+   - Search: Use search bar to find specific tasks
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎯 Key Components
 
-### Code Splitting
+### TaskForm
+- Handles task creation and editing
+- Form validation
+- Date and time picker integration
+- Priority selection
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### WeeklyView
+- Displays tasks grouped by week
+- Expandable/collapsible sections
+- Progress visualization
+- Task count summary
 
-### Analyzing the Bundle Size
+### TaskCard
+- Individual task display
+- Status toggle
+- Edit/Delete actions
+- Priority indication
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### SearchBar
+- Real-time search functionality
+- Filtered results display
+- Action shortcuts
 
-### Making a Progressive Web App
+## 📱 Responsive Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Mobile-first approach
+- Breakpoints:
+  - Mobile: < 640px
+  - Tablet: 640px - 1024px
+  - Desktop: > 1024px
 
-### Advanced Configuration
+## 🎨 Design System
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Colors
+- Primary: Blue (#2563eb)
+- Background: White (#ffffff)
+- Text: Dark Gray (#1f2937)
+- Success: Green (#22c55e)
+- Warning: Yellow (#eab308)
+- Error: Red (#ef4444)
 
-### Deployment
+### Typography
+- Font Family: Inter
+- Headings: Semi-bold
+- Body: Regular
+- Button Text: Medium
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🤝 Contributing
 
-### `npm run build` fails to minify
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## 🙏 Acknowledgments
+
+- Design inspiration from modern task management apps
+- Tailwind CSS community for responsive design patterns
+
+---
+
+For more information or support, please open an issue in the repository.
+
+## Contact
+#### Muni Sekhar
+#### munisekhar654@gmail.com
