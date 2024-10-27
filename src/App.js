@@ -203,12 +203,11 @@ const TaskStats = () => {
 const WeekView = () => {
   const { state, dispatch } = useTodo();
   const today = new Date();
-  const yesterday = new Date(today);
-yesterday.setDate(today.getDate() - 1);
+  
 
-  const weekStart = startOfWeek(yesterday);
+  const weekStart = startOfWeek(today);
 
-  console.log(weekStart)
+  
   const weekDays = eachDayOfInterval({
     start: weekStart,
     end: endOfWeek(today)
